@@ -1,7 +1,6 @@
 use nokhwa::{native_api_backend, query};
 
 fn main() {
-    println!("{}", std::env::consts::OS);
     // DirectShow をサポートしていないので、OBS Virtual Camera は検出されない
     // 参考: https://github.com/l1npengtul/nokhwa/issues/102
     let backend = native_api_backend().unwrap();
