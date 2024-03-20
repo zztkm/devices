@@ -1,0 +1,13 @@
+[package]
+name = "devices"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nokhwa = { git = "https://github.com/l1npengtul/nokhwa.git", branch = "0.10", features = [
+    "input-native",
+    "output-wgpu",
+] }
+winsafe = { version = "0.0.20", features = ["dshow"] }
